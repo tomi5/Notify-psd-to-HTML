@@ -166,8 +166,7 @@ header::before {
   border-bottom-left-radius: 15px !important;
 }
 
-.newsletter__button {
-  display: block;
+.btn {
   background-color: var(--green-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -176,7 +175,11 @@ header::before {
   color: #fff;
   border-top-right-radius: 15px !important;
   border-bottom-right-radius: 15px !important;
-  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #848484;
 }
 
 /* Get in Touch section */
