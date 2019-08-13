@@ -100,33 +100,36 @@
 						fugiat aperiam, reiciendis sapiente animi consequuntur a laborum porro!</p>
 
 					<div class="col-auto">
-						<label class="sr-only" for="inlineFormInputGroup">Email address</label>
-						<div class="input-group">
-							<input type="email" class="form-control" id="inlineFormInputGroup"
-								placeholder="Email address">
-							<div class="input-group-prepend col-4 p-0 text-center">
-								<button class=" newsletter__button input-group-text w-100 border-left-0"
-									data-toggle="modal" data-target="#NewsletterConfirm">Notify</button>
+						<form class="form-group">
+							<label class="sr-only" for="inlineFormInputGroup">Email address</label>
+							<div class="input-group">
+								<input type="email" class="form-control" id="inlineFormInputGroup"
+									placeholder="Email address">
+								<div class="input-group-prepend col-4 p-0 text-center">
+									<button class=" newsletter__button input-group-text w-100 border-left-0"
+										type="submit" data-toggle="modal"
+										data-target="#NewsletterConfirm">Notify</button>
 
-								<div class="modal fade" id="NewsletterConfirm" tabindex="-1" role="dialog"
-									aria-labelledby="subscription confirmation" aria-hidden="true">
-									<div class="modal-dialog modal-dialog-centered" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title">Just one more step...</h5>
-												<button type="button" class="close" data-dismiss="modal"
-													aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												Check your emailbox and confirm subscription!
+									<div class="modal fade" id="NewsletterConfirm" tabindex="-1" role="dialog"
+										aria-labelledby="subscription confirmation" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title">Just one more step...</h5>
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													Check your emailbox and confirm subscription!
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</form>
 					</div>
 
 

@@ -183,6 +183,7 @@ header::before {
 
 .section__title--getInTouch {
   font-size: 24px;
+  line-height: 24px;
 }
 
 .footer__link:hover {
