@@ -164,3 +164,9 @@ header::before {
   border-bottom-right-radius: 15px !important;
   cursor: pointer;
 }
+
+/* Get in Touch section */
+
+.section__title--getInTouch {
+  font-size: 24px;
+}
