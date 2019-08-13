@@ -6,6 +6,10 @@ font-family: 'Pacifico', cursive; */
   font-family: 'Helvetica', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)), url("../img/main_banner.jpg") no-repeat 50%;
