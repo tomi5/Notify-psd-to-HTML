@@ -3,7 +3,6 @@ font-family: 'Pacifico', cursive; */
 
 * {
   --green-color: #2ecc71;
-  --icon-bcg: #030303;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -11,11 +10,12 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)), url("../img/main_banner.jpg") no-repeat 50%;
   background-size: cover;
-  color: white;
+  color: #fff;
   overflow-x: hidden;
   height: 100vh;
 }
 
+/* top green line */
 header::before {
   position: absolute;
   left: -10%;
@@ -43,36 +43,48 @@ header::before {
   font-size: 24px;
 }
 
-/* set icons' color */
+/* set icons' propert */
 
-.icons__link {
+.icon {
   position: relative;
-  font-size: 30px;
   height: 52px;
   width: 52px;
-
+  font-size: 30px;
 }
 
-.icons__link .fab {
+.icon--socials {
+  width: 34px;
+  height: 34px;
+  font-size: 20px;
+}
+
+.icon .fab {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #fff;
 }
 
-.icons__link::before {
+/* icons bcg */
+.icon::before {
   display: block;
   content: "";
   height: 52px;
   width: 52px;
   border-radius: 50%;
-  background-color: var(--icon-bcg);
+  background-color: #030303;
   opacity: 0.5;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
-.icons__link:hover::before {
+.icon--socials::before {
+  width: 34px;
+  height: 34px;
+  background-color: #c5c5c5;
+}
+
+.icon:hover::before {
   background-color: var(--green-color);
   opacity: 1;
 }
@@ -93,7 +105,7 @@ header::before {
   display: block;
   line-height: 40px;
   font-size: 40px;
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -132,14 +144,16 @@ header::before {
   font-weight: 600;
 }
 
-.section__descr {
+.section__descr,
+.footer__link {
   font-size: 16px;
   line-height: 26px;
   color: #848484;
 }
 
 /* section newsletter */
-.section--newsletter {
+.section--newsletter,
+.footer {
   background-color: #e3e3e3;
 }
 
@@ -159,7 +173,7 @@ header::before {
   font-weight: 700;
   font-size: 22px;
   line-height: 18px;
-  color: white;
+  color: #fff;
   border-top-right-radius: 15px !important;
   border-bottom-right-radius: 15px !important;
   cursor: pointer;
@@ -169,4 +183,9 @@ header::before {
 
 .section__title--getInTouch {
   font-size: 24px;
+}
+
+.footer__link:hover {
+  text-decoration: none;
+  color: var(--green-color)
 }
