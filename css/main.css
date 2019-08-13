@@ -2,110 +2,165 @@
 font-family: 'Pacifico', cursive; */
 
 * {
- --green-color: #2ecc71;
- --icon-bcg: #030303;
- font-family: 'Helvetica', sans-serif;
+  --green-color: #2ecc71;
+  --icon-bcg: #030303;
+  font-family: 'Helvetica', sans-serif;
 }
 
 header {
- background: linear-gradient(rgba(0, 0, 0, 0.2),
-   rgba(0, 0, 0, 0.2)), url("../img/main_banner.jpg") no-repeat 50%;
- background-size: cover;
- color: white;
- overflow-x: hidden;
- height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)), url("../img/main_banner.jpg") no-repeat 50%;
+  background-size: cover;
+  color: white;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
 header::before {
- position: absolute;
- left: -10%;
- top: 0;
- width: 110%;
- height: 10px;
- content: "";
- background-color: var(--green-color);
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 110%;
+  height: 10px;
+  content: "";
+  background-color: var(--green-color);
 
 }
 
 .heading,
 .heading__dot {
- font-family: 'Pacifico', cursive;
-}
-
-.heading {
- font-size: 70px;
+  font-size: 60px;
+  line-height: 20px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
 }
 
 .heading__dot {
- color: var(--green-color)
+  color: var(--green-color)
 }
 
 .subheading {
- font-size: 24px;
-}
-
-.arrow {
- position: absolute;
- bottom: 3%;
- left: 50%;
- transform: translateX(-50%);
- width: 40px;
- height: 40px;
- cursor: pointer;
- 
-}
-
-.arrow span {
- display: block;
- line-height: 40px;
- font-size: 40px;
- color: white;
- text-decoration: none;
- transition: color 0.3s;
-}
-.arrow:hover,
-.arrow span:hover {
- color: var(--green-color);
- text-decoration: none;
- }
-
-.iphone {
- display: none;
- width: 100%;
- height: 100%;
- background: url("../img/iphone.png") no-repeat;
+  font-size: 24px;
 }
 
 /* set icons' color */
 
 .icons__link {
- position: relative;
- font-size: 30px;
- height: 52px;
- width: 52px;
- 
+  position: relative;
+  font-size: 30px;
+  height: 52px;
+  width: 52px;
+
 }
 
 .icons__link .fab {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- color: white;
- }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 
 .icons__link::before {
- display: block;
- content: "";
- height: 52px;
- width: 52px;
- border-radius: 50%;
- background-color: var(--icon-bcg);
- opacity: 0.5;
- transition: 0.3s;
+  display: block;
+  content: "";
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-color: var(--icon-bcg);
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .icons__link:hover::before {
- background-color: var(--green-color);
- opacity: 1;
+  background-color: var(--green-color);
+  opacity: 1;
+}
+
+/* scroll arrow  */
+
+.arrow {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.arrow span {
+  display: block;
+  line-height: 40px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.arrow:hover,
+.arrow span:hover {
+  color: var(--green-color);
+  text-decoration: none;
+}
+
+/*Features section*/
+.img_wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 29px;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+}
+
+.features__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 43px;
+  height: 43px;
+}
+
+.section__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  color: #222222;
+  font-weight: 600;
+}
+
+.section__descr {
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+}
+
+/* section newsletter */
+.section--newsletter {
+  background-color: #e3e3e3;
+}
+
+.form-control {
+  height: 53px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #848484;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+
+.newsletter__button {
+  display: block;
+  background-color: var(--green-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 18px;
+  color: white;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  cursor: pointer;
 }
