@@ -1,7 +1,7 @@
 // header carousel interval
 
 $('.carousel').carousel({
-    interval: 5000
+    interval: 3000
 })
 
 
