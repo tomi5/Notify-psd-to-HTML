@@ -194,3 +194,9 @@ header::before {
   text-decoration: none;
   color: var(--green-color)
 }
+
+@media (min-width: 992px) {
+  .header {
+    max-height: 600px;
+  }
+}
