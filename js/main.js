@@ -17,3 +17,33 @@ $('#newsletter').on('submit', function (e) {
     }
     $('#newsletter').addClass('was-validated')
 })
+
+
+//owl carousel
+
+$(document).ready(function () {
+
+    let owl = $('.owl-carousel');
+    owl.owlCarousel({
+        center: true,
+        loop: true,
+        margin: 5,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 5
+            },
+            600: {
+                items: 10
+            },
+            1000: {
+                items: 21
+            }
+        }
+    });
+
+
+
+});
