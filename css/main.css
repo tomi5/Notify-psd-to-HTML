@@ -1,5 +1,6 @@
 * {
   --green-color: #2ecc71;
+  --gray-color: #848484;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -166,7 +167,7 @@ header::before {
 .footer__link {
   font-size: 16px;
   line-height: 26px;
-  color: #848484;
+  color: var(--gray-color);
 }
 
 /* section newsletter */
@@ -180,7 +181,7 @@ header::before {
   height: 53px;
   font-size: 18px;
   line-height: 18px;
-  color: #848484;
+  color: var(--gray-color);
   border-top-left-radius: 15px !important;
   border-bottom-left-radius: 15px !important;
 }
@@ -198,10 +199,25 @@ header::before {
 }
 
 .btn:hover {
-  color: #848484;
+  color: var(--gray-color);
 }
 
-/* Testimonials carousel */
+/* Testimonials */
+
+.testimonial-quote {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--gray-color);
+}
+
+.testimonial-cite {
+  font-size: 18px;
+  line-height: 20px;
+  color: #2e2e2e;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .owl-carousel {
   position: relative;
