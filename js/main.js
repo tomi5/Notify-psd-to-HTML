@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     // fetch clients rewiev from json.
     function getClientsReview() {
-        return fetch('../clients_reviews.json')
+        return fetch('..\clients_reviews.json')
             .then(response => {
                 if (response.ok) {
                     return response
