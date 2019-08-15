@@ -57,7 +57,7 @@ $(document).ready(function () {
         $(this).attr('data-position', index);
     });
 
-    // owl carousel options
+    // owl carousel setup
     $owl.owlCarousel({
         center: true,
         loop: true,
@@ -78,7 +78,7 @@ $(document).ready(function () {
                 items: 21
             }
         },
-    }).on('changed.owl.carousel', syncPosition);;
+    }).on('translated.owl.carousel', syncPosition);;
 
 
 
