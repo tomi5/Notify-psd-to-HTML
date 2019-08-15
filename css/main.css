@@ -224,35 +224,34 @@ header::before {
   overflow: hidden;
 }
 
-.owl-carousel::before,
-.owl-carousel::after {
+.owl-carousel--photos::before,
+.owl-carousel--photos::after {
   position: absolute;
   top: -5%;
   bottom: -5%;
   content: "";
-
   z-index: 3;
 }
 
-.owl-carousel::before {
+.owl-carousel--photos::before {
   left: -1%;
   right: 95%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.98) 30%, rgba(255, 255, 255, 0.66) 81%, rgba(255, 255, 255, 0.66) 100%);
 }
 
-.owl-carousel::after {
+.owl-carousel--photos::after {
   left: 95%;
   right: -1%;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.98) 30%, rgba(255, 255, 255, 0.66) 81%, rgba(255, 255, 255, 0.66) 100%);
 }
 
 
-.owl-carousel .item {
+.owl-carousel--photos .item {
   cursor: pointer;
   position: relative;
 }
 
-.owl-carousel .item::before {
+.owl-carousel--photos .item::before {
   position: absolute;
   content: "";
   top: 0;
@@ -263,10 +262,23 @@ header::before {
   background-color: var(--green-color);
 }
 
-.owl-carousel .item:hover::before {
+.owl-carousel--photos .item:hover::before {
   opacity: 0.5;
 }
 
+.owl-item blockquote,
+.owl-item cite {
+  display: none;
+}
+
+.owl-item.center blockquote,
+.owl-item.center cite {
+  display: block;
+}
+
+.owl-carousel--clientsReview {
+  min-height: 200px;
+}
 
 /* Get in Touch section */
 
