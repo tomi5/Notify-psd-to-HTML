@@ -276,8 +276,8 @@ header::before {
   display: block;
 }
 
-.owl-carousel--clientsReview {
-  min-height: 200px;
+.testimonial-quote {
+  min-height: 100px;
 }
 
 /* Get in Touch section */
