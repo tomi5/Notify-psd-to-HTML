@@ -34,6 +34,7 @@
         <h2 class="subheading mt-5 mb-lg-3 text-center text-md-left">A great new free psd thame to showcase your new
           application.</h2>
 
+        <!-- header icons block  -->
         <div class="mt-md-0 d-flex justify-content-around">
           <a href="#" class="icon d-block m-2 text-center"><span class="fab fa-apple"
               aria-label="link to thame for apple operating system"></span></a>
@@ -70,12 +71,12 @@
 
   </header>
 
-
   <!-- MAIN -->
   <main>
-    <!-- FEATURES -->
+    <!-- SECTION FEATURES -->
     <section id="features" class="container-fluid px-md-5 d-flex justify-content-center ">
       <div class="row my-3 my-md-5 justify-content-between" style="max-width: 1200px">
+        <!-- single feature start  -->
         <div class="col-md-3 m-3 mx-lg-0 px-md-1 text-center">
           <div class="img_wrapper">
             <img src="img/gear_icon.png" class="features__img" alt="">
@@ -85,6 +86,7 @@
             dolorem!
           </p>
         </div>
+        <!-- single feature start  -->
         <div class="col-md-3 m-3 mx-lg-0 px-md-1 text-center">
           <div class="img_wrapper">
             <img src="img/star_icon.png" class="features__img" alt="">
@@ -94,6 +96,7 @@
             dolorem!
           </p>
         </div>
+        <!-- single feature start  -->
         <div class="col-md-3 m-3 mx-lg-0 px-md-1 text-center">
           <div class="img_wrapper">
             <img src="img/globe_icon.png" class="features__img" alt="">
@@ -104,14 +107,14 @@
           </p>
         </div>
       </div>
-
-
     </section>
 
-    <!-- GET NOTIFIED -->
+    <!--SECTION GET NOTIFIED -->
     <section class="section--newsletter container-fluid py-5 px-lg-5 d-flex justify-content-center">
       <div class="row px-md-5 px-xl-0 justify-content-center justify-content-md-between" style="max-width: 1200px">
         <div class="col-11 col-md-6 pl-xl-0 pr-xl-5 d-flex flex-column justify-content-center">
+
+          <!-- newsletter content  -->
           <div class="d-flex flex-column justify-content-center">
             <h2 class="section__title text-center text-md-left">Get Notified Of Any Updates</h2>
             <p class="section__descr my-4 text-md-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
@@ -121,6 +124,7 @@
               quasi fugiat aperiam, reiciendis sapiente animi consequuntur a laborum porro!</p>
           </div>
 
+          <!-- newsletter form  -->
           <form id="newsletter" class="form-group mb-5 pr-xl-5 input-group needs-validation">
             <label class="sr-only" for="email">Email address</label>
             <input type="email" id="email" class="form-control pl-4" placeholder="Email Address"
@@ -128,7 +132,7 @@
             <div class="input-group-append mr-xl-5">
               <button class="btn px-4" type="submit" id="button-email" data-target="#confirm">Notify</button>
             </div>
-
+            <!-- newsletter modal  -->
             <div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="subscription_confirm"
               aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
@@ -148,6 +152,7 @@
           </form>
         </div>
 
+        <!-- video container  -->
         <div class="col-10 col-md-5 align-self-start rounded-lg embed-responsive embed-responsive-16by9">
           <video class="embed-responsive-item" muted allowfullscreen controls>
             <source src="video/video.mp4" type="video/mp4">
@@ -159,18 +164,19 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
+    <!-- SECTION TESTIMONIALS -->
 
     <section class="container-fluid justify-content-center" style="max-width: 1200px">
 
       <div class="row mt-5 mr-auto ml-auto justify-content-center" style="max-width: 900px">
 
+        <!-- cliet's review and name - fetch from json file -->
         <blockquote class="testimonial-quote col-12 mb-0 pt-3 text-center font-italic">
         </blockquote>
         <cite class="testimonial-cite col-12 my-4 py-2 text-center"></cite>
 
+        <!-- owl carousel with clients' pict -->
         <div id="sync2" class="owl-carousel owl-theme owl-carousel--photos">
-
           <div class="item" data-id="1"><img src="img/clients_photos/person_1.jpg" alt="client's photo">
           </div>
           <div class="item" data-id="2"><img src="img/clients_photos/person_2.jpg" alt="client's photo">
@@ -207,7 +213,7 @@
       </div>
     </section>
 
-    <!-- GET IN TOUCH -->
+    <!-- SECTION GET IN TOUCH -->
 
     <section id="contact" class="container-fluid py-5  justify-content-center">
       <div class="row justify-content-center">
@@ -215,6 +221,7 @@
           <h2 class="section__title section__title--getInTouch mb-4">Say Hi & Get in Touch</h2>
           <p class="section__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam.</p>
 
+          <!-- social media block  -->
           <div class="mt-5 mx-lg-5 d-flex justify-content-around justify-content-lg-center">
             <a href="https://twitter.com" class="icon icon--socials d-block m-2 text-center"><span
                 class="fab fa-twitter" aria-label="link to Notify's Twitter"></span></a>
@@ -230,13 +237,12 @@
                 class="fab fa-youtube" aria-label="link to Notify's YouTube"></span></a>
           </div>
 
-
         </div>
       </div>
     </section>
   </main>
 
-
+  <!-- FOOTER  -->
   <footer class="footer container-fluid">
     <div class="row justify-content-center">
       <div class="col-md-10 col-lg-6 m-3 d-flex flex-column flex-md-row justify-content-center text-center">
@@ -250,9 +256,7 @@
     </div>
   </footer>
 
-
-
-
+  <!-- JS scripts  -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
