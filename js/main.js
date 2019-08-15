@@ -31,8 +31,6 @@ $(document).ready(function () {
     let clients
 
     // fetch clients rewiev from json.
-
-
     function getClientsReview() {
         return fetch('../clients_reviews.json')
             .then(response => {
@@ -46,8 +44,9 @@ $(document).ready(function () {
             .catch(error => console.log(error));
     }
 
-    getClientsReview().then(function (result) {
-        clients = result
+    // pass fetch result to cliets var 
+    getClientsReview().then(function (data) {
+        clients = data
         // set initial review display
         $client.text(clients[0].name);
         $review.text(clients[0].review)
@@ -84,18 +83,21 @@ $(document).ready(function () {
 
 
     function syncPosition() {
-        // get id of centered img
+        // get id of centered img and pass it to displayReview funct
         let id = $owl.find(".owl-item.center div").attr("data-id")
         displayReview(id)
     }
 
-    // center img on click 
+
     $(document).on('click', '.owl-item>div', function () {
+        // centering img on click
         $owl.trigger('to.owl.carousel', $(this).data('position'));
+        // get id of clicked img and pass it to displayReview funct
         let id = $(this).attr("data-id");
         displayReview(id);
     });
 
+    // display client review in HTML blockqoute container
     function displayReview(id) {
         clients.find(client => {
             if (client.id == id) {
