@@ -9,6 +9,10 @@ html {
 }
 
 /* SECTION HEADER */
+.header__row {
+  max-width: 1000px;
+}
+
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)), url("../img/main_banner.jpg") no-repeat 50%;
@@ -137,7 +141,11 @@ header::before {
 }
 
 /* SECTION FEATURES */
-.img_wrapper {
+.features__row {
+  max-width: 1200px;
+}
+
+.img-wrapper {
   position: relative;
   display: inline-block;
   margin-bottom: 29px;
@@ -178,6 +186,10 @@ header::before {
   background-color: #e3e3e3;
 }
 
+.newsletter__row {
+  max-width: 1200px;
+}
+
 .form-control {
   height: 53px;
   font-size: 18px;
@@ -204,6 +216,13 @@ header::before {
 }
 
 /* SECTION TESTIMONIALS */
+.section--testimonials {
+  max-width: 1200px;
+}
+
+.testimonials__row {
+  max-width: 900px;
+}
 
 .testimonial-quote {
   font-size: 18px;
