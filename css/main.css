@@ -308,7 +308,7 @@ header::before {
   }
 }
 
-@media  (orientation: landscape) { 
+@media screen and (orientation:landscape) { 
   .arrow {
     display: none
 }
