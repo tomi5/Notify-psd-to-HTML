@@ -297,7 +297,7 @@ header::before {
 }
 
 .testimonial-quote {
-  min-height: 100px;
+  min-height: 200px;
 }
 
 /* SECTION GET IN TOUCH*/
@@ -316,5 +316,9 @@ header::before {
 @media (min-width: 992px) {
   .header {
     max-height: 600px;
+  }
+
+  .testimonial-quote {
+    min-height: 100px;
   }
 }
