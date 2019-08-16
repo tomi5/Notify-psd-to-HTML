@@ -308,7 +308,8 @@ header::before {
   }
 }
 
-@media screen and (orientation:landscape) { 
-  .arrow {
+@media screen and (orientation:landscape) {
+  .header a.arrow span {
     display: none
+  }
 }
