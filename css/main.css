@@ -287,16 +287,6 @@ header::before {
   opacity: 0.5;
 }
 
-.owl-item blockquote,
-.owl-item cite {
-  display: none;
-}
-
-.owl-item.center blockquote,
-.owl-item.center cite {
-  display: block;
-}
-
 /* SECTION GET IN TOUCH*/
 
 .section__title--getInTouch {
