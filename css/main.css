@@ -231,8 +231,6 @@ header::before {
   color: var(--gray-color);
 }
 
-}
-
 .testimonials__cite {
   font-size: 18px;
   line-height: 20px;
