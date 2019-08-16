@@ -24,8 +24,8 @@ $(document).ready(function () {
     let $owl = $('.owl-carousel');
 
     // get blockquote and cite element
-    let $review = $('.testimonial-quote');
-    let $client = $('.testimonial-cite');
+    let $review = $('.testimonials__quote');
+    let $client = $('.testimonials__cite');
 
     // START - Clients review array -- disable if use fetch from json
     let clients = [{

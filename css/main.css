@@ -224,13 +224,16 @@ header::before {
   max-width: 900px;
 }
 
-.testimonial-quote {
+.testimonials__quote {
+  min-height: 200px;
   font-size: 18px;
   line-height: 30px;
   color: var(--gray-color);
 }
 
-.testimonial-cite {
+}
+
+.testimonials__cite {
   font-size: 18px;
   line-height: 20px;
   color: #2e2e2e;
@@ -296,10 +299,6 @@ header::before {
   display: block;
 }
 
-.testimonial-quote {
-  min-height: 200px;
-}
-
 /* SECTION GET IN TOUCH*/
 
 .section__title--getInTouch {
@@ -318,7 +317,7 @@ header::before {
     max-height: 600px;
   }
 
-  .testimonial-quote {
+  .testimonials__quote {
     min-height: 100px;
   }
 }
