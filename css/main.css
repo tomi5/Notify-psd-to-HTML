@@ -220,18 +220,16 @@ header::before {
   max-width: 1200px;
 }
 
-.testimonials__row {
-  max-width: 900px;
-}
-
 .testimonials__quote {
   min-height: 200px;
+  max-width: 900px;
   font-size: 18px;
   line-height: 30px;
   color: var(--gray-color);
 }
 
 .testimonials__cite {
+  max-width: 900px;
   font-size: 18px;
   line-height: 20px;
   color: #2e2e2e;
