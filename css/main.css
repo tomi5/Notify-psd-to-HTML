@@ -307,3 +307,8 @@ header::before {
     min-height: 100px;
   }
 }
+
+@media  (orientation: landscape) { 
+  .arrow {
+    display: none
+}
